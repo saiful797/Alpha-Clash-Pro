@@ -13,6 +13,8 @@
 
 function continueGame(){
     //step-1: generate a random Alphabet
+    const alphabet = GetARandomAlphabet();
+    console.log('Your Random alphabet: ', alphabet);
 }
 
 function play(){
