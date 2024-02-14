@@ -11,13 +11,23 @@
 //     // console.log(playGroundSection.classList);
 // }
 
+function handleKeyboardButtonPress(event){
 
+    const playerPressed = event.key;
+    console.log('Player pressed:',playerPressed);
+
+    //get the expected to press
+    const currentAlphabetElement = document.getElementByI('current-alphabet');
+    console.log(currentAlphabetElement);
+}
+//capture keyboard key press
+document.addEventListener('keyup', handleKeyboardButtonPress);
 
 
 function continueGame(){
     //step-1: generate a random Alphabet
     const alphabet = GetARandomAlphabet();
-    //console.log('Your Random alphabet: ', alphabet);
+    console.log('Your Random alphabet: ', alphabet);
 
     // set randomly generated alphabet to the screen(show it)
     const currentAlphabetElement = document.getElementById('current-alphabet');
