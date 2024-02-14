@@ -11,10 +11,22 @@
 //     // console.log(playGroundSection.classList);
 // }
 
+
+
+
 function continueGame(){
     //step-1: generate a random Alphabet
     const alphabet = GetARandomAlphabet();
-    console.log('Your Random alphabet: ', alphabet);
+    //console.log('Your Random alphabet: ', alphabet);
+
+    // set randomly generated alphabet to the screen(show it)
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    currentAlphabetElement.innerHTML = alphabet.toUpperCase();
+
+    //set background color
+    setBackgroundColorById(alphabet);
+
+
 }
 
 function play(){
