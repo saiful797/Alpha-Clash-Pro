@@ -17,8 +17,8 @@ function handleKeyboardButtonPress(event){
     console.log('Player pressed:',playerPressed);
 
     //get the expected to press
-    const currentAlphabetElement = document.getElementByI('current-alphabet');
-    console.log(currentAlphabetElement);
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    console.log(currentAlphabetElement.innerText);
 }
 //capture keyboard key press
 document.addEventListener('keyup', handleKeyboardButtonPress);
